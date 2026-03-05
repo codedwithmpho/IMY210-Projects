@@ -1,0 +1,328 @@
+/* ---------------------------------------------------------------------------- */
+/* Misc. */
+
+/* home background image */
+.background_image {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../media/images/b_countryside.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(7px);
+  z-index: -1;
+}
+
+/* buttons */
+.button:hover {
+	font-weight: bold;
+}
+
+.button {
+	text-decoration: none;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 10px;
+	margin-top: 20px; }
+
+
+/* Video */
+#video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+
+/* Lists */
+.game_levels ul,
+.game_vehicles ul,
+.game_tips ol {
+    text-align: left;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/* Contact Download links */
+.download_game ul {
+	list-style-type: none;
+}
+/* ---------------------------------------------------------------------------- */
+/* Base styles */
+/* basic background colour - light green (formatting) */
+body {
+    padding: 5px;
+    vertical-align: top;
+    margin: 15px;
+    text-align: center;
+}
+
+/* darker green background colour formatting */
+.dark_green {
+	padding: 40px;
+	margin-top: 40px;
+	border-radius: 20px;
+	text-align: center;
+	border: 2px solid black;
+
+}
+/* ---------------------------------------------------------------------------- */
+/* Animations and Transitions */
+
+/* TRANSITIONS */
+/* contact */
+/* download the game */
+.download_game img {
+	border-radius: 5px;
+	width: 150;
+	transition: width 0.5s;
+}
+
+.download_game img:hover {
+	transform: scale(1.2);
+}
+
+/* social media */
+.social_media img {
+	width: 50;
+	transition: width 0.5s;
+}
+
+.social_media img:hover {
+	transform: scale(1.2);
+}
+
+/* -----------------------------------
+/* fanclub */
+/* fanclub socials layout */
+.fanclub_socials div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+/* fanclub socials transitions - instagram */
+#fanclub_insta {
+	border-radius: 15px;
+	width: 50;
+	transition: transform 0.3s ease;
+}
+
+#fanclub_insta:hover {
+	transform: scale(1.2);
+}
+/* fanclub socials transitions - fandom */
+#fandom {
+	border-radius: 15px;
+	width: 150;
+	transition: transform 0.3s ease;
+}
+
+#fandom:hover {
+	transform: scale(1.2);
+}
+/* -----------------------------------
+/* merch */
+.merch_items figure {
+	width: 300px;
+	transition: transform 0.3s ease;
+}
+
+.merch_items figure:hover {
+	transform: scale(1.03);
+}
+/* -----------------------------------
+/* newsletter */
+.month_mastery {
+	padding: 0 20px;
+}
+/* grid layout */
+.month_mastery_pics {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+	gap: 13px;
+	padding: 9px;
+}
+
+.month_mastery_pics img {
+	width: 100%;
+	height: auto;
+	filter: grayscale(25%);
+	transition: transform 0.3s ease;
+}
+
+.month_mastery img:hover {
+	filter: grayscale(0%);
+	transform: scale(1.03);
+}
+/* -----------------------------------
+/* game */
+/* pictue of game played on phone*/
+.game_overview img {
+	width: 500px;
+	transition: transform 0.3s ease;
+}
+
+.game_overview img:hover {
+	transform: scale(1.05);
+}
+
+/* game levels*/
+.levels_pictures figure {
+	width: 340px;
+	transition: transform 0.3s ease;
+}
+
+.levels_pictures figure:hover {
+	transform: scale(1.03);
+}
+
+/* game vehicles*/
+.vehicle_pictures figure {
+	width: 330px;
+	transition: transform 0.3s ease;
+}
+
+.vehicle_pictures figure:hover {
+	transform: scale(1.03);
+}
+
+/* -----------------------------------
+/* about us */
+.about_success img,
+.about_hcr_gameplay img,
+.about_creator img{
+	width: 300px;
+	transition: transform 0.3s ease;
+}
+
+.about_success img:hover,
+.about_hcr_gameplay img:hover,
+.about_creator img:hover {
+	transform: scale(1.03);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* ANIMATION */
+@keyframes car_animation {
+	from { left: 0px; }
+	to { left: 1100px; }
+}
+
+#car_animation {
+	width: 200px;
+	height: 174px;
+	position: relative;
+	animation-name: car_animation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	transform: rotate(42deg);
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Contact */
+/* Social Media Links */
+.social_media a,
+.fanclub_socials a {
+  display: inline-block;
+  margin: 10px;
+}
+
+.social_media a img {
+	border-radius: 10px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* card styles - pictures */
+.merch_items figure,
+.levels_pictures figure,
+.vehicle_pictures figure {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
+  max-width: 200px;
+ 	margin:5px;
+  background-color:#F0EAD2;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  border: 2px solid black;
+}
+
+.merch_items img,
+.levels_pictures img,
+.vehicle_pictures img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: none;
+}
+
+.merch_items figcaption,
+.levels_pictures figcaption,
+.vehicle_pictures figcaption {
+  margin-top: 10px;
+}
+/* ---------------------------------------------------------------------------- */
+/* Layouts */
+.levels_pictures, .vehicle_pictures {
+  display: flex;
+  margin: auto;  /* stays center as objects move */
+  width: 100%; /* makes sure pictures show 2 below */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* ---------------------------------------------------------------------------- */
+/* Media Queries 
+.levels_pictures figure, 
+.vehicle_pictures figure {
+  flex: 1 1 auto; Flexible basis of 300px, can grow/shrink 
+}*/
+
+@media (max-width: 900px) {
+  .levels_pictures, .vehicle_pictures {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .levels_pictures figure,
+  .vehicle_pictures figure {
+    flex: 1 1 45%;
+    max-width: 90%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .levels_pictures figure,
+  .vehicle_pictures figure {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 700px) {
+	.game_overview img {
+	width: 100%;
+	}
+}
+
+
+
+
+
+
+

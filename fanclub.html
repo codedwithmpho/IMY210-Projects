@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Mpho Makwela">
+	<title>Fan Club</title>
+	<!--css linking-->
+	<!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="media/images/favicon.ico">
+
+    <!--css linking-->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/colours.css">
+    
+</head>
+<body class="fanclub" id="top">
+	<!--navigation-->
+	<header class="header">
+	    <nav>
+	        <a href="index.html">Home</a>
+	        <a href="about.html">About Us</a>
+	        <a href="game.html">Game</a>
+	        <a href="newsletter.html">Newsletter</a>
+	        <a href="merch.html">Merchandise</a>
+	        <a href="fanclub.html" class="active">Fan Club</a>
+	        <a href="contact.html">Contact</a>
+	    </nav>
+	</header>
+    <!-- Fan Club Sign-Up Form -->
+	<div class="fanclub">
+    <section class="fan_club_form">
+        <h2>Join the Hill Climb Racing Fan Club!</h2>
+        <p>Sign up to receive exclusive updates, news, and special offers.</p>
+        <p>Fields marked with a * are required</p>
+        
+        <form action="results.html" method="post">
+        	<fieldset>
+        		<legend>Hill Climb Racing Fan Club</legend>
+	            <!-- Name  -->
+	            <label for="name">* Name:</label>
+	            <input type="text" id="name" name="name" required><br><br>
+
+	            <!-- Surname -->
+	            <label for="name">* Surname:</label>
+	            <input type="text" id="surname" name="surname" required><br><br>
+
+	            <!-- Preferred Username -->
+	            <label for="username">* Username:</label>
+	            <input type="text" id="username" name="username" required><br><br>
+
+	            <!-- Email Address -->
+	            <label for="email">* Email Address:</label>
+	            <input type="email" id="email" name="email" required><br><br>
+
+	            <!-- Phone Number -->
+	            <label for="phone">* Phone Number:</label>
+	            <input type="tel" id="phone" name="phone"  maxlength="10" required><br><br>
+
+	            <!-- Date of Birth -->
+	            <label for="dob">* Date of Birth:</label>
+	            <input type="date" id="dob" name="dob" required><br><br>
+
+	            <!-- Preferred Contact Method -->
+	            <label for="contact-method">* Preferred Contact Method:</label>
+	            <select id="contact-method" name="contact-method">
+	                <option value="email">Email</option>
+	                <option value="whatsapp">WhatsApp</option>
+	                <option value="sms">SMS</option>
+	            </select><br><br>
+
+	            <!-- Password -->
+	            <label for="password">* Password:</label>
+	            <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+	            <!-- Confirm Password -->
+	            <label for="confirm-password">* Confirm Password:</label>
+	            <input type="password" id="confirm-password" name="confirm-password" minlength="8" required><br><br>
+
+	            <!-- Submit Button -->
+	            <button type="submit" class="button">Sign Up</button>
+            </fieldset>
+        </form>
+    </section>
+
+ 	<!-- link to follow fan page on socials -->
+ 	<section class="fanclub_socials">
+ 		 <h2>Follow Us on Social Media</h2>
+ 		<!-- instagram -->
+ 		<div>
+	 		<a href="https://www.instagram.com/hillclimbracing_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+	 			<img id="fanclub_insta"src="media/images/logo_instagram.jpg" alt="instagram icon" width="50" height="50"> 
+	 		</a>
+	 		<br/>
+	 		<!-- fandom -->
+	 		<a href="https://hillclimbracing.fandom.com/wiki/Home" target="_blank">
+	 			<img id="fandom" src="media/images/logo_fandom.webp" alt="fandom icon" width="150" height="50"> 
+	 		</a>
+ 		</div>
+ 	</section>
+ 	</div>
+
+ 	<footer>
+		<p><a href="#top" class="button">Back to top</a></p>
+	</footer>
+</body>
+</html>

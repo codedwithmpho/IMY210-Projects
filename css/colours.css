@@ -1,0 +1,27 @@
+/* buttons */
+.button:hover {
+	background-color: #A98467;
+}
+
+.button {
+	background-color: #6c584c;
+}
+
+/* basic background colour - light green */
+body {
+    background-color: #dde5b6;  
+}
+
+/* darker green background colour */
+.dark_green {
+	background-color: #adc178;
+	border: 2px solid black;
+}
+
+/* card styles - pictures */
+.merch_items figure,
+.levels_pictures figure,
+.vehicle_pictures figure {
+  background-color:#F0EAD2;
+}
+

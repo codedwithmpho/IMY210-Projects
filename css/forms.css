@@ -1,0 +1,184 @@
+/* ---------------------------------------------------------------------------- */
+/* Form styles */
+.fan_club_form,
+.merch_order_form,
+.newsletter-form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border:2px solid black;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid black;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.merch_fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.merch_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.merch_items figure {
+    text-align: center;
+    max-width: 200px;
+}
+/* ---------------------------------------------------------------------------- */
+/* Shipping section */
+.shipping_info {
+    background-color: #adc178;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.shipping_info fieldset {
+    text-align: center;
+}
+
+textarea {
+    height: 100px;
+    width: 200px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* fan club section */
+.fan_club_form {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fan_club_form form {
+    width: 100%;
+    background-color: #adc178;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.fan_club_form label,
+.fan_club_form input,
+.fan_club_form select,
+.fan_club_form button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 15px auto;
+    text-align: left;
+}
+
+.fan_club_form legend {
+    text-align: center;
+}
+
+.fan_club_form figure {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* newsletter section */
+.newsletter_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.newsletter_form form {
+    width: 100%;
+}
+
+.newsletter_form label,
+.newsletter_form input,
+.newsletter_form select,
+.newsletter_form button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 15px auto;
+    text-align: left;
+}
+
+.newsletter_form select {
+    border: 2px solid black;
+}
+/* ---------------------------------------------------------------------------- */
+/* card styles - merchandise */
+.merch_items figure,
+.levels_pictures figure,
+.vehicle_pictures figure {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    background-color: #fefae0;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    vertical-align: top;
+}
+
+.merch_items img,
+.levels_pictures img,
+.vehicle_pictures img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.levels_pictures img {
+    border: 5px solid #dde5b6;
+}
+
+.vehicle_pictures img {
+    border: 5px solid #adc178;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+

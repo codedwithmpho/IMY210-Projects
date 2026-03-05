@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Mpho Makwela">
+	<title>Merchandise</title>
+	<!--css linking-->
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="media/images/favicon.ico">
+
+    <!--css linking-->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/colours.css">
+    
+</head>
+<body class="merch" id="top">
+	<!--navigation-->
+	<header class="header">
+	    <nav>
+	        <a href="index.html">Home</a>
+	        <a href="about.html">About Us</a>
+	        <a href="game.html">Game</a>
+	        <a href="newsletter.html">Newsletter</a>
+	        <a href="merch.html" class="active">Merchandise</a>
+	        <a href="fanclub.html">Fan Club</a>
+	        <a href="contact.html">Contact</a>
+	    </nav>
+	</header>
+
+	 <!-- Merchandise Order Form -->
+    <section class="merch_order_form">
+        <h2>Order Hill Climb Racing Merchandise</h2>
+        <form action="checkout.html" method="post">
+        	  <!-- Buying Selection -->
+            <fieldset>
+            <legend>Merchandise Selection</legend>
+
+            <div class="merch_items">
+                <!-- Sweatshirt -->
+                <figure>
+                    <img src="media/images/merch_sweatshirt.jpg" alt="Grey sweatshirt with Bill Newton on it">
+                    <figcaption>
+                        <label for="sweatshirt">Sweatshirt ($20):</label>
+                        <input type="number" id="sweatshirt" name="sweatshirt" min="0" value="0">
+                    </figcaption>
+                </figure>
+
+                <!-- Hoodie -->
+                <figure>
+                    <img src="media/images/merch_hoodie.webp" alt="Grey hoodie with Bill Newton on it">
+                    <figcaption>
+                        <label for="hoodie">Hoodie ($20):</label>
+                        <input type="number" id="hoodie" name="hoodie" min="0" value="0">
+                    </figcaption>
+                </figure>
+
+                <!-- Cap -->
+                <figure>
+                    <img src="media/images/merch_cap.webp" alt="Black cap with Hill Climb Racing text">
+                    <figcaption>
+                        <label for="cap">Cap ($15):</label>
+                        <input type="number" id="cap" name="cap" min="0" value="0">
+                    </figcaption>
+                </figure>
+
+                <!-- Mug -->
+                <figure>
+                    <img src="media/images/merch_billnewton_mug.webp" alt="Mug of Bill Newton">
+                    <figcaption>
+                        <label for="mug">Mug ($10):</label>
+                        <input type="number" id="mug" name="mug" min="0" value="0">
+                    </figcaption>
+                </figure>
+
+                <!-- Travel Mug -->
+                <figure>
+                    <img src="media/images/merch_travelmug.webp" alt="Travel mug of Bill Newton">
+                    <figcaption>
+                        <label for="travel_mug">Travel Mug ($10):</label>
+                        <input type="number" id="travel_mug" name="travel_mug" min="0" value="0">
+                    </figcaption>
+                </figure>
+
+                <!-- Poster -->
+                <figure>
+                    <img src="media/images/merch_poster.webp" alt="Poster of Bill driving">
+                    <figcaption>
+                        <label for="poster">Poster ($5):</label>
+                        <input type="number" id="poster" name="poster" min="0" value="0">
+                    </figcaption>
+                </figure>
+            </div>
+        </fieldset>
+
+             <!-- Shipping Information -->
+            <div class="shipping_info">
+                <fieldset>
+                    <legend>Shipping Information</legend>
+                    <p>Fields marked with a * are required</p> <p>Fields marked with a * are required</p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="name">Surname:</label>
+                    <input type="text" id="surname" name="surname" required><br><br>
+
+                    <label for="email">*Email Address:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="address">*Shipping Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+    	            <label for="phone">* Phone Number:</label>
+    	            <input type="tel" id="phone" name="phone"  maxlength="10" required><br><br>
+
+                     <button type="submit" class="button">Place Order</button>
+                </fieldset>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p><a href="#top" class="button">Back to top</a></p>
+    </footer>
+
+</body>
+</html>

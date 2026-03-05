@@ -1,0 +1,26 @@
+/* Navigation */
+.header {
+    background-color: #6c584c;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header nav a {
+    color: #fefae0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.header nav a:hover {
+    background-color: #adc178;
+    color: #000;
+}
+
+.header nav a.active {
+    background-color: #dde5b6;
+    color: #000;
+}
